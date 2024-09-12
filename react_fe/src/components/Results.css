@@ -1,0 +1,76 @@
+.results-container {
+    padding: 20px;
+}
+
+.results-controls {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; /* Optional: adds space between the dropdowns */
+    margin-bottom: 20px;
+}
+
+.results-controls .form-group {
+    margin-right: 50px; /* Adds space between the dropdowns */
+    flex: 0 0 auto; /* Prevents dropdowns from stretching */
+}
+
+.results-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.custom-modal .modal-dialog {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.custom-modal .modal-content {
+    padding: 20px;
+}
+
+.custom-modal .modal-header {
+    border-bottom: 2px solid #007bff;
+}
+
+.custom-modal .modal-title {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.custom-modal .modal-body {
+    font-size: 1rem;
+    color: #333;
+}
+
+.custom-modal .modal-footer {
+    border-top: 2px solid #007bff;
+    padding: 10px;
+}
+
+.custom-modal .btn-secondary {
+    background-color: #007bff;
+    border: none;
+}
+
+.custom-modal .btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+.match-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-info, .score-venue, .date-time {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.match-events {
+    margin-top: 20px;
+}
+
+.match-events th, .match-events td {
+    text-align: center;
+}

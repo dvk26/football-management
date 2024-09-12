@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ftm
+    username: root
+    password: dvk26092004
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true3306
+        default_fetch_mode: join
+    show-sql: true
+server:
+  port: 8080
+
+
+jwt:
+  hoidanit.upload-file.base-uri: file:///C:/Users/Admin/Desktop/upload/
+  #config jwt
+  hoidanit.jwt.base64-secret: ogbnwrPDVcg9CAzrzcVFCdWBf/YZGzX2Ovf5WBXa7Xav/TCkSVIxJ+Nf6XXHdwkkgoWh1916ikZjqxgKMWq1Jg==
+  #expiration: 1 day (second= 24*60*60)
+  access-token-expiration: 8640
+  refresh-token-expiration: 8640000
+###

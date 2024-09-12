@@ -1,0 +1,109 @@
+.banner-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Điều chỉnh chiều cao theo nhu cầu */
+    overflow: hidden; /* Ẩn phần vượt ra ngoài khung */
+    border: 5px solid #ddd; /* Tạo viền cho khung bao quanh slide, có thể tùy chỉnh kích thước và màu sắc */
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Increase the height of the banner */
+  }
+  
+  .slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà */
+    width: 110%;
+    height: 100%; /* Adjust to the new banner height */
+  }
+  
+  .slide-item {
+    min-width: 100%; /* Đảm bảo mỗi hình ảnh chiếm toàn bộ chiều rộng của slide */
+    height: 100%;
+    display: flex;
+    align-items: center; /* Căn giữa hình ảnh theo chiều dọc */
+    justify-content: center; /* Căn giữa hình ảnh theo chiều ngang */
+    box-sizing: border-box; /* Đảm bảo viền không làm thay đổi kích thước tổng thể */
+  }
+  
+  .slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Đảm bảo hình ảnh phủ đầy khung chứa mà không bị biến dạng */
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1; /* Đảm bảo nút luôn nằm trên hình ảnh */
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .image {
+    max-width: 50%; /* Đảm bảo hình ảnh không vượt quá kích thước phần tử */
+    height: auto;
+    margin: 20px 0; /* Khoảng cách giữa hình ảnh và các tiêu đề */
+  }
+  .home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa; /* Light background for the entire page */
+}
+
+.home-button {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 3px solid #000; /* Add a border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    background-size: cover; /* Ensure the image covers the entire button */
+    background-position: center; /* Center the image */
+}
+
+.home-button.rankings {
+    background-image: url('../img/background.jpg'); /* Replace with the path to your rankings background image */
+}
+
+.home-button.rule {
+    background-image: url('../img/background.jpg'); /* Replace with the path to your top scorers background image */
+}
+
+.home-button:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.5); /* Darken the image on hover */
+    border-color: #fff; /* Change border color on hover */
+}
+
+.view-container {
+    width: 100%;
+    text-align: center;
+}
+
+  

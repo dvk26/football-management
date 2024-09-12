@@ -1,0 +1,46 @@
+/* Tournament.css */
+.tournament-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa; /* Light background for the entire page */
+}
+
+.tournament-button {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 3px solid #000; /* Add a border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    background-size: cover; /* Ensure the image covers the entire button */
+    background-position: center; /* Center the image */
+}
+
+.tournament-button.rankings {
+    background-image: url('../img/background.jpg'); /* Replace with the path to your rankings background image */
+}
+
+.tournament-button.top-scorers {
+    background-image: url('../img/background.jpg'); /* Replace with the path to your top scorers background image */
+}
+
+.tournament-button:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.5); /* Darken the image on hover */
+    border-color: #fff; /* Change border color on hover */
+}
+
+.view-container {
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,182 @@
+/* src/components/Ranking.css */
+
+.ranking-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ranking-controls {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    margin-bottom: 20px;
+    gap: 20px; /* Space between the dropdowns */
+}
+
+.ranking-controls .form-group {
+    margin-right: 20px;
+    flex: 1; /* Ensure both dropdowns have the same width */
+}
+
+.ranking-table {
+    margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-image: url('https://example.com/banner-background.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; /* Tăng padding để tạo khoảng trống xung quanh form */
+    position: relative; /* Để đặt nút tuyệt đối bên trong form */
+    min-height: 400px; /* Tăng chiều cao tối thiểu của form */
+    max-width: 1000px; /* Tăng chiều rộng tối đa của form */
+    margin: auto; /* Căn giữa form trên trang */
+    background-color: #fff; /* Thêm màu nền trắng cho form */
+    border: 1px solid #ddd; /* Thêm viền cho form */
+    border-radius: 8px; /* Bo tròn góc form */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    text-align: left; /* Đảm bảo các label căn trái */
+}
+
+input,
+select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.button-container {
+    margin-top: auto; /* Đẩy nút xuống dưới cùng */
+    display: flex;
+    justify-content: flex-end; /* Đẩy nút sang bên phải */
+    gap: 1rem; /* Khoảng cách giữa các nút */
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.player-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.player-header, .player-row {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1.5fr 1fr 1.5fr; /* Điều chỉnh chiều rộng của các cột */
+    gap: 0.75rem; /* Tăng khoảng cách giữa các cột */
+    margin-bottom: 0.75rem; /* Tăng khoảng cách giữa các dòng */
+}
+
+.player-header {
+    font-weight: bold;
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.player-row {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.player-row input,
+.player-row select {
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Register.css */
+
+/* Register.css */
+
+/* Container cho alert để căn giữa và mở rộng kích thước */
+.alert-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050; /* Đảm bảo Alert nằm trên các phần tử khác */
+    width: 80%;
+    max-width: 600px; /* Kéo dài chiều ngang của Alert */
+}
+
+/* Tùy chỉnh kiểu của Alert */
+.alert-custom {
+    margin: 0;
+}
+
+/* Thân của Alert để định dạng nội dung */
+.alert-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nút nằm ở giữa */
+.alert-button-container {
+    margin-top: 10px; /* Khoảng cách từ tiêu đề của Alert đến nút */
+    text-align: center; /* Căn giữa các nút bên trong */
+}
+
+/* Tùy chỉnh cho Button để làm cho nó nổi bật */
+.alert-button {
+    background-color: #007bff; /* Màu nền của Button */
+    border: none;
+    color: white; /* Màu chữ của Button */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.alert-button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}

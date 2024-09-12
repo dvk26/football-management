@@ -1,0 +1,53 @@
+.schedule-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.schedule-controls {
+    display: flex;
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    justify-content: space-between; /* Đẩy các phần tử ra hai bên */
+    margin-bottom: 20px;
+}
+
+.schedule-controls .form-group {
+    flex: 1; /* Cho phép các dropdowns chiếm hết không gian bên trái */
+    max-width: 200px; /* Kích thước tối đa cho mỗi dropdown */
+}
+
+.new-season-group {
+    flex: 0 0 auto; /* Kích thước cố định cho nút tạo mùa giải mới */
+}
+
+/* Đảm bảo nút tạo mùa giải mới có cùng kích thước với dropdowns */
+.schedule-controls .form-group select,
+.new-season-group button {
+    width: 100%;
+}
+
+.schedule-table-container {
+    margin-top: 20px;
+}
+
+.round-schedule {
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .schedule-controls {
+        flex-direction: column;
+    }
+
+    .schedule-controls .form-group,
+    .new-season-group {
+        width: 100%; /* Đảm bảo tất cả các phần tử chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+        margin-left: 0; /* Gỡ bỏ khoảng cách bên trái */
+        margin-top: 10px; /* Thêm khoảng cách phía trên */
+    }
+
+    .new-season-group {
+        margin-top: 20px; /* Thêm khoảng cách phía trên cho nút tạo mùa giải mới */
+    }
+}

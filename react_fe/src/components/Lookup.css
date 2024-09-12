@@ -1,0 +1,91 @@
+/* Lookup.css */
+.player-lookup-container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.search-group {
+    display: flex;
+    flex-direction: column; /* Stack search fields vertically */
+    gap: 15px; /* Space between input fields and buttons */
+}
+
+/* Style for search elements */
+.search-team, .search-name, .search-year, .search-type {
+    width: 100%; /* Full width for each search field */
+}
+
+/* Style for search button */
+.search-button {
+    align-self: flex-start; /* Align button to the start */
+}
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .search-target,
+    .search-input {
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        margin-top: 10px;
+    }
+}
+
+.player-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increase the space between cards */
+}
+
+/* Style for individual player cards */
+.player-card {
+    flex: 1 1 calc(50% - 30px); /* Adjust for the increased gap */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    /* Ensure consistent height for cards, adjust as needed */
+    min-height: 150px;
+}
+
+/* Hover effect for player cards */
+.player-card:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for player name and details */
+.player-card strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.player-card .details {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .player-card {
+        flex: 1 1 calc(100% - 30px); /* Adjust for the increased gap on smaller screens */
+        font-size: 0.9rem;
+    }
+}
